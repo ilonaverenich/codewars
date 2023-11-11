@@ -9,8 +9,5 @@ i.e.
 friend ["Ryan", "Kieran", "Mark"] `shouldBe` ["Ryan", "Mark"]
 Note: keep the original order of the names in the output. */
 
-function friend(friends){
-    return friends.filter(item=>item[0].toUpperCase() && item.length ==4)
-  }
+let friend = friends => friends.filter(item=>item[0].toUpperCase() && item.length ==4 )
 
-console.log(  friend(["Ryan", "Kieran", "Mark"]))
