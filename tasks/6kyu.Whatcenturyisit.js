@@ -12,7 +12,8 @@ function whatCentury(year){
         6: 'th',
         7: 'th',
         8:'th',
-        9:'th'
+        9:'th',
+        
     }
     const centery = Math.floor((year-1)/100) + 1;
     const lastLetter = +String(centery).split('').slice(-1).join('')
